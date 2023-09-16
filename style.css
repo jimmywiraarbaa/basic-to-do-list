@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: linear-gradient(to right, #FFB660, pink);
+}
+
+h1{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    flex-direction: column;
+}
+
+.list-item{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.list-item-detail{
+    display: flex;
+    align-items: center;
+}
+
+.list-item-detail input{
+    margin-right: 16px;
+}
+
+.list-item-detail input:checked ~ span{
+    text-decoration: line-through;
+}
